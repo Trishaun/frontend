@@ -1,0 +1,15 @@
+body{
+    margin-top: 50px;
+}
+
+#login-form-link{
+    padding-left: 130px;
+}
+
+.uni{
+    font-size: large;   
+}
+
+#register-form-link{
+    padding-left: 70px; 
+}

@@ -1,0 +1,39 @@
+body {
+    background: url(stock.jpg);
+    background-size: 100%;
+}
+
+.section-header{
+    border-style : solid;
+    width: 75%;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #505050;
+}
+p{
+    color:	#F0F0F0;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 8px 10px 8px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
+    margin-top: 20px;
+    margin-right: 14px;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}

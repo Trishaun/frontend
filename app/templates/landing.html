@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+            <!--- basic page needs
+    ================================================== -->
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}Mercury</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+<!-- CSS
+    ================================================== -->
+        <link rel="stylesheet" href= "{{ url_for('static',filename='styles/base.css') }}">
+        <link rel="stylesheet" href= "{{ url_for('static',filename='styles/vendor.css') }}">
+        <link rel="stylesheet" href= "{{ url_for('static',filename='styles/main.css') }}">
+        <link rel="stylesheet" href= "{{ url_for('static',filename='styles/mecury.css') }}">
+    
+    </head>
+  
+    <body style = "background-image: url({{ url_for('static', filename='img/mecury.jpg') }}">
+         <!-- home
+    ================================================== -->
+        <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+            <div class="overlay"></div>
+            <div class="shadow-overlay"></div>
+
+            <div class="home-content">
+
+                <div class="row home-content__main">
+
+                    <h3>Welcome to Mercury</h3>
+
+                    <h1>
+                        Mercury is stock analysis tool<br>
+                        which provides predictions for<br>
+                        equities on the market <br>
+                        This tool is great for amateurs!!
+                    </h1>
+
+                    <div class="home-content__buttons">
+                        <a href="{{ url_for('login') }}" class="smoothscroll btn btn--stroke">
+                            Login
+                        </a>
+                        <a href="#about" class="smoothscroll btn btn--stroke">
+                            About Us
+                        </a>
+                    </div>
+                </div>
+
+        </section> <!-- end s-home -->
+    </body>
+</html>
